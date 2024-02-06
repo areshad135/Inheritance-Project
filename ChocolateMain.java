@@ -32,6 +32,12 @@ class Hersheys extends Chocolate {
         super.displayInfo();
         System.out.println("Flavor: " + flavor);
     }
+
+    // Overriding the toString method from the Object class
+    @Override
+    public String toString() {
+        return "Brand: " + brand + ", Price: $" + price + ", Flavor: " + flavor;
+    }
 }
 
 class Twix extends Chocolate {
@@ -92,11 +98,11 @@ public class ChocolateMain {
         Hersheys hersheys = new Hersheys("Hershey's", 2.99, "Milk Chocolate");
         Twix twix = new Twix("Twix", 1.49, 2);
         KitKat kitKat = new KitKat("KitKat", 1.99, "Regular");
-        DairyMilk dairyMilk = new DairyMilk("Dairy Milk", 3.49, "Charamel");
+        DairyMilk dairyMilk = new DairyMilk("Dairy Milk", 3.49, "Plain");
 
         // Displaying information about chocolates
         System.out.println("Hershey's:");
-        hersheys.displayInfo();
+        System.out.println(hersheys.toString()); // Using overridden toString method
 
         System.out.println("\nTwix:");
         twix.displayInfo();
