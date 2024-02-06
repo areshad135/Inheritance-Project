@@ -1,3 +1,4 @@
+//Ahmed Reshad
 // Parent class
 class Chocolate {
     String brand;
@@ -53,7 +54,7 @@ class Twix extends Chocolate {
     @Override
     void displayInfo() {
         super.displayInfo();
-        System.out.println("Pieces: " + pieces);
+        System.out.println("Stix: " + pieces);
     }
 }
 
@@ -98,7 +99,7 @@ public class ChocolateMain {
         Hersheys hersheys = new Hersheys("Hershey's", 2.99, "Milk Chocolate");
         Twix twix = new Twix("Twix", 1.49, 2);
         KitKat kitKat = new KitKat("KitKat", 1.99, "Regular");
-        DairyMilk dairyMilk = new DairyMilk("Dairy Milk", 3.49, "Plain");
+        DairyMilk dairyMilk = new DairyMilk("Dairy Milk", 3.49, "Charamel");
 
         // Displaying information about chocolates
         System.out.println("Hershey's:");
